@@ -54,7 +54,8 @@ function confirmacion(opcion, cursos) {
 
     if (confirmacionCurso == "si") {
         let nombre = prompt("Ingresa nombre y apellido")
-        alert("Te inscribiste en:\n" + cursos[opcion - 1])
+        let mail = prompt("Ingresa tu email")
+        alert("Te inscribiste en:\n" + cursos[opcion - 1] + " \n Gracias!, recibirás mas información por mail")
     } else {
         alert("Inscripcion cancelada")
     }

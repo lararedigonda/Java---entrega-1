@@ -1,13 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- JS -->
-        <script defer src="./main.js"></script>
-    <title>Ele.pottery</title>
+    <script defer src="./assets/js/cursos.js"></script>
+    <script defer src="./assets/js/inscripcion.js"></script>
+    <!--Animate-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Relación CSS y bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta name="description"
+        content="Cursos y talleres de introducción a la cerámica, experimenta el mundo de la cerámica con las manos en la arcilla y creá tus propias piezas">
+    <meta name="keywords"
+        content="Cerámica, cursos y talleres, productos hechos a mano, artesanal, creá tus propias piezas">
+    <!-- Relación tipo de fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Talleres y cursos - Ele.pottery</title>
 </head>
+
 <body>
-    <h1>Cursos de cerámica</h1>
+    <header>
+        <img src="assets/img/logo.webp" width="150">
+        <h1 class="encabezado">Con las manos en la arcilla</h1>
+        <!-- Nav bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light-mi-fondo">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logosinfondo animate__animated animate__tada"
+                        src="assets/img/logosinfondo.webp" width="50"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quienes-somos.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="talleres-cursos-eventos.html">Talleres, cursos y eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="testimonios.html">Testimonios</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="introduccion">
+                <p><strong>Te invitamos a conocernos un poco más y a conocer nuestros servicios y talleres.</strong></p>
+            </div>
+            <h2 class="titulos2 animate__animated animate__fadeIn"><strong>Talleres disponibles</strong></h2>
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div class="cursos">
+                            <h2 class="titulos">Talleres y cursos</h2>
+                            <ul>
+                                <li>Taller intensivo: Desayuno/Merienda y ceramica</li>
+                                <p>Un encuentro en el que realizamos 1 pieza desde cero, y otra que obtenemos a partir
+                                    de la tecnica de
+                                    molde para que puedan intervenir. + Desayuno o merienda</p>
+                                <li>Seminario</li>
+                                <p> 4 encuentros en los cuales vemos todo el proceso de la ceramica hasta obtener la
+                                    pieza final</p>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div class="cursos">
+                            <h2 class="titulos">Hace tu evento con nosotros</h2>
+                            <p>Podes escribirnos para organizar tu evento y pasar un rato diferente con los tuyos.
+                                Nosotros
+                                llevamos
+                                todos
+                                los materiales y lo necesario para cuidar todos tus espacios</p>
+                            <ul>
+                                <li>Cumpleaños</li>
+                                <li>Evento sorpresa</li>
+                                <li>Un día distinto con amigas/os</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- Talleres -->
+            <section class="container my-5">
+                <h2 class="titulos2 text-center">Inscribite a un taller</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <form id="formInscripcion" class="p-4 shadow rounded bg-light">
+                            <div class="mb-3">
+                                <label class="form-label">Nombre completo</label>
+                                <input type="text" id="nombreInscripto" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" id="emailInscripto" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <div class="mb-3">
+                                    <label class="form-label">Edad</label>
+                                    <input type="number" id="edadInscripto" class="form-control" required min="1">
+                                </div>
+                                <div id="mensajeEdad" class="mt-2"></div>
+                                <label class="form-label">Seleccionar taller</label>
+                                <select id="selectCurso" class="form-select" required>
+                                    <option value="">Elegir...</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn">
+                                Confirmar inscripción
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <h3 class="text-center">Inscriptos</h3>
+                    <div id="listaInscriptos" class="mt-3"></div>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <!-- Datos de contacto -->
+        <section class="pie">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 col-lg-6">
+                        <h3 class="datos">Contacto</h3>
+                        <p> 221 555 4444</p>
+                        <h3 class="datos">Mail</h3>
+                        <p>elepottery.ceramica@gmail.com</p>
+                        <!-- Enlace absoluto -->
+                        <div class="link">
+                            <h3 class="datos">Instagram</h3>
+                            <a href="https://www.instagram.com/ele.pottery/">Ele.pottery</a>
+                        </div>
+                    </div>
+                    <!-- Formulario de contacto-->
+                    <div class="col-sm-7 col-lg-6">
+                        <h3 class="datos">Contactate con nosotros</h3>
+                        <div class="formulario">
+                            <form
+                                action="https://docs.google.com/spreadsheets/d/1fQl7xgCPEhQ2yqRY-DM3Snmw6yysPS7h2E6KOX6i-q0/edit?gid=0#gid=0"
+                                method="post">
+                                <div class="campo">
+                                    <label for="">Nombre y Apellido:</label>
+                                </div>
+                                <div class="input"><input type="text" name="nombre" id="nombre">
+                                </div>
+                                <div class="campo">
+                                    <label for="Email">Email:</label>
+                                </div>
+                                <div class="input">
+                                    <input type="email" name="email" id="email">
+                                </div>
+                                <div class="campo">
+                                    <label for="celular">Celular</label>
+                                </div>
+                                <div class="input">
+                                    <input type="tel" name="telefono" id="telefono">
+                                </div>
+                                <div class="campo">
+                                    <label for="">Mensaje</label>
+                                </div>
+                                <div class="input">
+                                    <textarea name="mensaje" id="mensaje"></textarea>
+                                </div>
+                                <input type="submit" value="Enviar" class="botonenviar">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -27,7 +27,7 @@ function renderInscriptos() {
         div.classList.add("card", "p-3", "mb-2");
 
         div.innerHTML = `
-            <strong>${insc.nombre}</strong> (${insc.edad} años) - ${insc.curso}
+            ${insc.nombre}(${insc.edad} años) - ${insc.curso}
         <button class="btn btn-sm float-end btn-eliminar" data-id="${insc.id}">
             Eliminar
         </button>

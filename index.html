@@ -7,6 +7,8 @@
     <!-- JS -->
     <script defer src="./assets/js/cursos.js"></script>
     <script defer src="./assets/js/inscripcion.js"></script>
+    <script defer src="./assets/js/clases.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!--Animate-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Relación CSS y bootstrap-->
@@ -121,6 +123,11 @@
                                     <input type="number" id="edadInscripto" class="form-control" required min="1">
                                 </div>
                                 <div id="mensajeEdad" class="mt-2"></div>
+                                <div class="mb-3">
+                                    <label class="form-label">Alergias o restricciones</label>
+                                    <input type="text" id="alergias" class="form-control"
+                                        placeholder="Ej: sin gluten, vegano, etc.">
+                                </div>
                                 <label class="form-label">Seleccionar taller</label>
                                 <select id="selectCurso" class="form-select" required>
                                     <option value="">Elegir...</option>
